@@ -1,4 +1,5 @@
 hyperloglog
+bench
 *.txt
 *.o
 *.ko

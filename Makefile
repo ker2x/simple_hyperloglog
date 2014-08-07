@@ -15,7 +15,7 @@ all:
 	gcc -shared  -o libhll.so hll.o
 
 clean:
-	rm -f *.o *.so htest
+	rm -f *.o *.so htest bench
 
 test:
 	gcc -Wall -O3 -o htest test.c -L. -lhll -lm
@@ -23,3 +23,5 @@ test:
 	./htest deleteme
 	rm -f deleteme
 	
+bench:
+	gcc -Wall -O3 -o bench bench.c -L. -lhll -lm
