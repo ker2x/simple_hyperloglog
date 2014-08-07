@@ -28,12 +28,12 @@
 #define HLL_ERROR   0
 
 struct hll {
-    uint8_t registers[HLL_REGISTERS];
-    double PE[64];
+	uint8_t registers[HLL_REGISTERS];
+	double PE[64];
 };
 
 
-struct hll* hll_init(void);
+struct 		hll* hll_init(void);
 uint8_t  	hll_add(struct hll *h, uint8_t *data, uint32_t datalen);
 void 		hll_print(struct hll *h);
 uint64_t 	hll_count(struct hll *h);
