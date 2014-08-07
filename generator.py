@@ -10,6 +10,6 @@ python generate.py > TEST.txt
 '''
 
 
-for i in range(1000000):
+for i in range(1000):
 	chars = "".join( [random.choice(string.letters).lower() for i in xrange(3)] )
 	print chars

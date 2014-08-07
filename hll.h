@@ -1,7 +1,11 @@
 #ifndef __HLL_H
 #define __HLL_H
 
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
+
 
 #define HLL_SEED			0xadc83b19ULL
 #define HLL_REGISTERS		(1 << 14)
